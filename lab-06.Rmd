@@ -1,77 +1,105 @@
 ---
-title: "Lab 06 - Functions and iterations"
-author: "INSERT NAME HERE"
+title: "Lab 06 - Take a sad plot and make it better"
+author: "User1, User2, User3 and User4 - Team Name"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
+### Load packages
 
-### Packages and Data
-
-```{r load-packages, message=FALSE}
-library(tidyverse) 
+```{r load-packages, message = FALSE, warning=FALSE}
+library(tidyverse)
 library(ggplot2)
 ```
 
-```{r diamon_rename}
-diamonds <- diamonds %>% rename(
-    depth_pct = depth,
-    length_mm = x,
-    width_mm = y,
-    depth_mm = z,
-    table_pct = table
-  )
+
+# Questioning data visualisations
+
+## Image 1
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/Speaking-the-world.jpg")
+```
+
+_Write your comments about image 1 below_
+
+
+
+
+
+## Image 2
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/rose-pop-density-total-area-bw.jpg")
+```
+
+_Write your comments about image 2 below_
+
+
+
+
+## Image 3
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/life-expectancy-rule-of-law.png")
+```
+
+_Write your comments about image 3 below_
+
+
+
+
+## Image 4
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/global-income-dist.PNG")
+```
+
+_Write your comments about image 4 below_
+
+
+
+
+
+# Exercises
+
+```{r load-data-staff, message=FALSE, eval=TRUE}
+staff <- read_csv("data/instructional-staff.csv")
 ```
 
 
 ## Exercise 1
 
-```{r}
-# Do some preliminary investigations & cleaning
+What is the difference between *wide format* data and *long format* data?
 
 
+Is the format `staff` data *wide* or *long*?
 
 
-```
+How many observations are there in the data set?
+
+
 
 
 ## Exercise 2
 
-```{r}
+```{r pivoting}
+## Uncomment and complete the following code
 
-diamonds <- diamonds %>%
-  mutate(table_mm = table_pct * width_mm / 100)
-
-# Overall table_mm arithmetic mean?
-
-
-
-
-
-
-# table_mm arithmetic mean within each clarity category
-
-
-
-
-
+#staff_long <- ___ %>%
+#  ___(
+#    cols = ____, 
+#    names_to = "_____",
+#    values_to = "percent"
+#    )
 
 ```
 
-_Add your comment here_
-
-```{r}
-# calculate the arithmetic mean across all numeric variables
-
-
-
-
-```
 
 ## Exercise 3
 
-```{r}
-# Write gmean() command
+```{r dot-plot}
+# Write your code for Exercise 3 here
 
 
 
@@ -79,36 +107,25 @@ _Add your comment here_
 
 ## Exercise 4
 
-```{r, error = TRUE}
+```{r bad-line-plot}
+# Write your code for Exercise 4 here
 
-test_data <- list(
-  test1 = c(2.1, 3.8, 4.2),
-  test2 = c(1, 10, 100, 1000),
-  test3 = c(0, 1, 4),
-  test4 = c(0.38,  0.94, -1.56),
-  test5 = c(TRUE, TRUE),
-  test6 = c("6", "7", "8")
-)
-
-
-# Create for loop to test gmean() on the above examples
 
 
 ```
 
-
 ## Exercise 5
 
-```{r}
-# Copy gmean() from Ex 3 and edit it to check the input
+```{r mutate-year}
+## Uncomment and complete the following code
+
+#staff_long <- staff_long %>%
+#  mutate(year = ______(year))
+```
 
 
-
-
-
-# Copy your code from Ex 4 to test your new command
-
-
+```{r working-line-plot}
+# Write your code for Exercise 5 here
 
 
 
@@ -116,61 +133,30 @@ test_data <- list(
 
 ## Exercise 6
 
-```{r}
-# replicate the for loop from Ex 4 using the map (or a similar) function
+```{r better-line-plot}
+# Write your code for Exercise 6 here
+
+
+
 
 ```
-
 
 ## Exercise 7
 
-```{r}
-# Overall table_mm arithmetic mean, median, and geometric mean?
+_Write below your ideas for adapting the line plot_
+
+* Idea 1
+* Idea 2
+* Idea 3
+* ...
 
 
+## Exercise 8
 
-
-
-
-# Arithmetic mean, median, and geometric mean of table_mm within each clarity category
-
-
-
-
-
-
-```
-
-_Add your comment here_
-
-
-## Exercise 8 (optional)
-
-```{r}
-# Create gmean2() that computes the geometric mean 
-#   that uses the original definition
-
-
-
+```{r implement-Ex7}
+# Write your code for Exercise 8 here
 
 
 
 ```
 
-
-## Exercise 9 (optional)
-
-```{r}
-# Create a function that computes the harmonic mean
-
-
-
-
-
-
-
-```
-
-## Exercise 10 (optional)
-
-_Do derivation on paper, unless you know how to write LaTeX code_
