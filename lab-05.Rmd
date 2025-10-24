@@ -35,7 +35,7 @@ knitr::include_graphics("img/rose-pop-density-total-area-bw.jpg")
 
 _Write your comments about image 2 below_
 
-
+There is no key so it is unclear what the chart is depicting. Based on the title, it can be inferred that the larger the section, the the larger the total area of each country is. Also, it can be inferred that the darker the color the higher the population density is.
 
 
 ## Image 3
