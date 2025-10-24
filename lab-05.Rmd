@@ -22,8 +22,7 @@ knitr::include_graphics("img/Speaking-the-world.jpg")
 ```
 
 _Write your comments about image 1 below_
-
-
+The cartoon of the 3 people overstates certain ethnic/physical features, which could unintentionally suggest hierarchy/ superiority between the shown languages. The data may be misled, as there was no given source, as well as there being different dialects for Chinese. The language chinese is done in billions while the rest of the languages are done in millions which mixes up the units which can be misleading, as well as the fact that the lengths of the bar graphs are not mathematically proportional. 
 
 
 
