@@ -45,7 +45,7 @@ knitr::include_graphics("img/life-expectancy-rule-of-law.png")
 
 _Write your comments about image 3 below_
 
-
+Due to the large quantity of countries shown in the image, it is nearly impossible to interpret the data. A different type of visual would better convey the data which can be done via computer programs. There are also no units on the axes, making the correlation a bit vague. 
 
 
 ## Image 4
