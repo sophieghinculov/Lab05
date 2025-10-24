@@ -79,7 +79,7 @@ The format of the data is wide.
 
 How many observations are there in the data set?
 
-There are 6 observations.
+There are 55 observations in this data set
 
 
 ## Exercise 2
