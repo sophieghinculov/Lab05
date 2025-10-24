@@ -55,7 +55,7 @@ knitr::include_graphics("img/global-income-dist.PNG")
 ```
 
 _Write your comments about image 4 below_
-
+The data set being from 2011, shows that it may be misleading to the current conditions in 2025. Stated in brackets at the bottom that it is a logarithmic x-axis, which may be confusing to many readers, as well as the y-axis being labeled without units. The mix of all the different colours, takes away from viewing the data visually as well as making the poverty line harder to read, so some readers may miss it. 
 
 
 
