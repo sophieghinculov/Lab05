@@ -87,12 +87,12 @@ There are 55 observations in this data set
 ```{r pivoting}
 ## Uncomment and complete the following code
 
-#staff_long <- ___ %>%
-#  ___(
-#    cols = ____, 
-#    names_to = "_____",
-#    values_to = "percent"
-#    )
+staff_long <- staff %>%
+  pivot_longer(
+    cols = c(faculty_type), 
+    names_to = "years",
+    values_to = "percent"
+    )
 
 ```
 
